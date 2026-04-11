@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Procman</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Fri, 10 Apr 2026 15:20:27 -0700</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://pacificcoast.dev/procman/Procman%201.0.0.dmg" length="3923230" type="application/octet-stream" sparkle:edSignature="p6THSW/KN1GqsLP6EubRswrFhM/qWi5jcGdpobm0OhISPHGi/5y8eXt0Q4taw2CYGcym93RwYX6aLByuvRfeAA=="/>
+        </item>
+    </channel>
+</rss>
