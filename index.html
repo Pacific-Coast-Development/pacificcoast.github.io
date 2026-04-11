@@ -1,73 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pacific Coast Developments | Delightful macOS Apps</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #fbfbfd; color: #1d1d1f; }
-        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pacific Coast Development</title>
+    <meta
+      name="description"
+      content="Pacific Coast Development builds thoughtful macOS utilities, starting with Procman, a modern visual process explorer for Mac."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Pacific Coast Development home">
+          <span class="brand-mark">PC</span>
+          <span class="brand-text">Pacific Coast Development</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#apps">Apps</a>
+          <a href="#procman">Procman</a>
+          <a href="#scope">Scope</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
 
-    <nav class="fixed w-full z-50 glass border-b border-gray-200">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="font-semibold text-lg tracking-tight">Pacific Coast Development</div>
-            <div class="space-x-8 text-sm text-gray-500">
-                <a href="#apps" class="hover:text-blue-600 transition">Apps</a>
-                <a href="#about" class="hover:text-blue-600 transition">About</a>
-                <a href="mailto:hi@pacificcoast.dev" class="hover:text-blue-600 transition">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="pt-32 pb-20 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-6">
-                Delightful utilities <br><span class="text-blue-600">built for macOS.</span>
-            </h1>
-            <p class="text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
-                We craft intentional, high-performance tools that feel right at home on your Mac. No bloat, just pure utility.
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Mac software, built with care</p>
+            <h1>Beautiful utilities for people who live on macOS.</h1>
+            <p class="hero-text">
+              Pacific Coast Development is a small app foundry making polished,
+              focused tools for the Mac. We build software that feels native,
+              useful, and quietly powerful from the first launch.
             </p>
-        </div>
-    </header>
-
-    <section id="apps" class="py-20 bg-white border-y border-gray-100">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="bg-gray-50 rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-12">
-                <div class="flex-1">
-                    <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full mb-4">COMING SOON</span>
-                    <h2 class="text-4xl font-bold mb-4">Procman</h2>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        A cultured take on process management. Gain total visibility into your system performance with a tree-first interface that replaces the clutter of traditional system monitors.
-                    </p>
-                    <div class="flex items-center space-x-4">
-                        <button class="bg-black text-white px-6 py-3 rounded-xl font-medium hover:bg-gray-800 transition">
-                            Get Notified
-                        </button>
-                    </div>
-                </div>
-                <div class="flex-1 w-full">
-                    <div class="aspect-video bg-gradient-to-br from-blue-400 to-indigo-600 rounded-2xl shadow-2xl flex items-center justify-center text-white font-mono text-sm opacity-90">
-                        <img 
-                        src="preview.png" 
-                        alt="procMan App Interface" 
-                        class="rounded-2xl shadow-2xl w-full h-auto border border-gray-200"
-                    >
-                    </div>
-                </div>
+            <div class="hero-actions">
+              <a
+                class="button button-primary"
+                href="https://pacificcoast.dev/procman/Procman%201.0.0.dmg"
+              >
+                Direct download
+              </a>
+              <a class="button button-secondary" href="#scope">See what's next</a>
             </div>
-        </div>
-    </section>
+          </div>
 
-    <footer class="py-10 border-t border-gray-200">
-        <div class=" mx-auto px-6 text-center text-sm text-gray-400">
-            <p>&copy; 2026 Pacific Coast Development. All rights reserved.</p>
-        </div>
-    </footer>
+          <div class="hero-visual">
+            <div class="window window-main screenshot-frame">
+              <img
+                class="hero-screenshot"
+                src="./procman/procman.png"
+                alt="Screenshot of the Procman interface showing a live process list and system overview"
+              />
+            </div>
+            <div class="menulet-card">
+              <span class="menulet-dot"></span>
+              <span>Menu bar monitoring built in</span>
+            </div>
+          </div>
+        </section>
 
-</body>
+        <section class="intro-strip">
+          <p>
+            Our first release is available now, and the next one is already in
+            motion.
+          </p>
+        </section>
+
+        <section class="apps-section" id="apps">
+          <article class="app-card featured" id="procman">
+            <div class="app-card-copy">
+              <p class="eyebrow">Available now</p>
+              <h2>Procman</h2>
+              <p class="lede">
+                A modern visual process explorer for macOS.
+              </p>
+              <p>
+                Procman helps you understand what's running on your Mac, how
+                processes are related, what they're consuming, and why they
+                exist. Instead of forcing you through a flat list, it organizes
+                your system into a live parent-child tree with the clarity of
+                <code>pstree</code> and the polish of a native Mac utility.
+              </p>
+              <div class="detail-row">
+                <a
+                  class="button button-primary"
+                  href="https://pacificcoast.dev/procman/Procman%201.0.0.dmg"
+                >
+                  Direct download
+                </a>
+                <span>3-day free trial</span>
+                <span>macOS 13+</span>
+              </div>
+            </div>
+            <div class="feature-grid" aria-label="Procman features">
+              <div class="feature-tile">
+                <h3>Live process tree</h3>
+                <p>Browse a live hierarchical view of everything running on your Mac.</p>
+              </div>
+              <div class="feature-tile">
+                <h3>Deep system insight</h3>
+                <p>Inspect CPU, memory, disk, network, and energy usage at a glance.</p>
+              </div>
+              <div class="feature-tile">
+                <h3>Fast workflow</h3>
+                <p>Search, sort, inspect, kill, or restart processes without friction.</p>
+              </div>
+              <div class="feature-tile">
+                <h3>Menu bar access</h3>
+                <p>Keep system-wide activity one click away with a configurable applet.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <div class="story-copy">
+              <p class="eyebrow">Why it exists</p>
+              <h2>Made for the moments when Activity Monitor isn't enough.</h2>
+              <p>
+                Procman is built for developers, power users, IT professionals,
+                and anyone who has ever wondered what their Mac is actually
+                doing in the background. It turns process relationships into
+                something legible, useful, and even pleasant to explore.
+              </p>
+            </div>
+            <div class="spec-list">
+              <div>
+                <span>License</span>
+                <strong>Paid app after trial</strong>
+              </div>
+              <div>
+                <span>Support</span>
+                <a href="mailto:procman@pacificcoast.dev">procman@pacificcoast.dev</a>
+              </div>
+              <div>
+                <span>Platform</span>
+                <strong>macOS 13 or later</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="app-card upcoming" id="scope">
+            <div class="app-card-copy">
+              <p class="eyebrow">Coming soon</p>
+              <h2>Scope</h2>
+              <p class="lede">
+                A camera app for macOS, designed with the same Pacific Coast
+                sensibility.
+              </p>
+              <p>
+                Scope is our next release. We're giving the Mac camera
+                experience the same level of care we brought to Procman:
+                native-feeling controls, a cleaner interface, and a tool you'll
+                actually want to keep open.
+              </p>
+            </div>
+            <div class="scope-preview" aria-hidden="true">
+              <div class="scope-ring"></div>
+              <div class="scope-panel">
+                <span>Scope</span>
+                <strong>Camera utility for macOS</strong>
+                <p>In development</p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="closing-section">
+          <div>
+            <p class="eyebrow">Pacific Coast Development</p>
+            <h2>Small foundry, high standards.</h2>
+          </div>
+          <p>
+            We're building a focused catalog of Mac apps that solve real
+            problems without feeling industrial or disposable.
+          </p>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="contact">
+        <div>
+          <strong>Pacific Coast Development</strong>
+          <p>Independent Mac apps with taste.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#procman">Procman</a>
+          <a href="#scope">Scope</a>
+          <a href="mailto:procman@pacificcoast.dev">procman@pacificcoast.dev</a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
