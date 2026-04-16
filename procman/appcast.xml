@@ -3,6 +3,17 @@
     <channel>
         <title>Procman</title>
         <item>
+            <title>1.1.0</title>
+            <pubDate>Thu, 16 Apr 2026 13:08:48 -0700</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://pacificcoast.dev/procman/Procman%201.1.0.dmg" length="4115666" type="application/octet-stream" sparkle:edSignature="6asN1BUQf8NFECHJEoiTumQVPfnLxtR3S2AQkViJQt3Ui79dHiKiCFlYN41tItFNr1SKoFVYFxz4+TbdGpudBA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://pacificcoast.dev/procman/Procman2-1.delta" sparkle:deltaFrom="1" length="365366" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="5Q4Wba91OxPfjHAgVcvq7ckP9QvWahs5UaxnJQ9OIZQHAUxc4t94/CQRuc0aZZm1PQtVvfP2GgyMc7pGm84FBg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0.0</title>
             <pubDate>Fri, 10 Apr 2026 15:20:27 -0700</pubDate>
             <sparkle:version>1</sparkle:version>
